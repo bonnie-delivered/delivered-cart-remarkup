@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/* skip navigation */
+#u_skip{position:relative;z-index:1000;margin-left:20px}
+#u_skip a{position:absolute;top:-30px;left:0;width:128px;border:1px solid #4ec53d;background:url(../img/spr_u_skip.png) repeat-x 0 -11px;text-align:center;outline:none}
+#u_skip a:active,#u_skip a:focus{top:0;text-decoration:none;cursor:pointer;zoom:1}
+#u_skip span{display:inline-block;padding:2px 6px 0 0;background:url(../img/spr_u_skip.png) no-repeat 100% 11px;font-size:11px;line-height:26px;color:#fff;letter-spacing:-1px}
+
+
+:root {
+  /* 🖋️Gray Scales */
+  --gray-0: #FFF;
+  --gray-100: #F8F8F8;
+  --gray-200: #E9EBED;
+  --gray-300: #CACDD2;
+  --gray-400: #9FA4A9;
+  --gray-500: #73787E;
+  --gray-600: #464C52;
+  --gray-700: #26282B;
+  --gary-800: #1B1D1F;
+  --gray-999: #OOO;
+  --chrcoal-999: #384452;
+
+  /* 🖋️️Type */
+  --text-primary: var(--gray-700);
+  --text-secondary: var(--gray-600);
+  --text-teritary: var(--gray-400);
+  --text-info: var(--gray-400);
+  --text-positive: var(--status-lv-00);
+  --text-nagative: var(--status-lv-04);
+  --text-delay: var(--status-lv-03);
+
+  /* 🚨status */
+  --status-lv-00: #067CFD;
+  --status-lv-01: #00C400;
+  --status-lv-02: #F4BF6E;
+  --status-lv-03: #FA560E;
+  --status-lv-04: #FF4852;
+
+  /* 💄Primary  */
+  --dk-mint-100: #cff2ed;
+  --dk-mint-200: #afe9e1;
+  --dk-mint-300: #8fdfd4;
+  --dk-mint-400: #6fd6c8;
+  --dk-mint-500: #4fcdbc;
+  --dk-mint-600: #35beac;
+  --dk-mint-700: #2c9f8f;
+  --dk-mint-800: #1f9389;
+  --dk-mint-900: #237f73;
+
+  --dk-orange-100: #FEF7F1;
+  --dk-orange-200: #fce8d8;
+  --dk-orange-300: #fbd7bb;
+  --dk-orange-400: #f9c59e;
+  --dk-orange-500: #fbb582;
+  --dk-orange-600: #f6a363;
+  --dk-orange-700: #fb9851;
+  --dk-orange-800: #f59246;
+  --dk-orange-900: #f38129;
+
+  --dk-dgb-100: #edf6f7;
+  --dk-dgb-200: #c9e2e8;
+  --dk-dgb-300: #74a5be;
+  --dk-dgb-400: #4e89a6;
+  --dk-dgb-500: #447791;
+  --dk-dgb-600: #3a667c;
+  --dk-dgb-700: #305568;
+  --dk-dgb-800: #274553;
+  --dk-dgb-900: #1d333e;
+
+  --grd-gray: linear-gradient(46deg, #1B1D1F 0%, #464C52 100%);
+  --grd-mint: linear-gradient(46deg, #2D9F90 0%, #50CEBD 100%);
+  --grd-dgb: linear-gradient(46deg, #315668 0%, #4E89A6 100%);
+  --grd-org: linear-gradient(46deg, #FB9851 0%, #FCB583 100%);
+
+  --character-primary-inverse: #FFF;
+  --label-color-dark-primary: #FFF; /* 혹시나 하고 적어놓습니다. --character-primary-inverse랑 중복안가요? 피그마에서 따오긴 했는데, 아니면 못본 척 삭제하고 가던 길 지나가주십쇼..! */
+
+  --bgzt-primary: #D80C18;
+  --naver-primary: #03C75A;
+
+  /* Border */
+  --border-01: var(--gray-200);
+
+  /* Shadow */
+  --shadow-lv-01: 0px 0px 4px 0px rgba(32, 32, 32, 0.20);
+
+
+  /* Breakpoint */
+  --breakpoint-desktop: 1200px;
+  --breakpoint-tablets: 768px;
+  --breakpoint-mobile: 360px;
+
+  /*!* tablets (가로 해상도가 768px 보다 크고 991px 보다 작은 화면에 적용)  *!*/
+  /*@media (min-width: 768px) and (max-width: 991px) {...}*/
+
+  /*!* desktop sub (가로 해상도가 992px 보다 크고 1199px 보다 작은 화면에 적용)  *!*/
+  /*@media (min-width: 992px) and (max-width: 1199px) {...}*/
+
+  /*!* desktop main (가로 해상도가 1200px 보다 큰 화면에 적용)  *!*/
+  /*@media (min-width: 1200px) {...}*/
+}
