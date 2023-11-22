@@ -5,12 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CartList</title>
   <script src="https://www.w3.orgcontent/shared/js/utils.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+  <link rel="stylesheet" href="/resources/css/common/reset.css">
+  <link rel="stylesheet" href="/resources/css/common/font-face.css">
+  <link rel="stylesheet" href="/resources/css/common/common.css">
+  <link rel="stylesheet" href="/resources/css/common/common.css">   
+  <link rel="stylesheet" href="/resources/css/common/table.css">
   <style>
   </style>
 </head>
+<style>
+  .container {  margin: 0 auto; max-width: 1200px; display: flex; flex-direction: column; padding: 1rem; gap: 2rem; background: var(--gray-100); }
+  .cartlist { background: var(--gray-0); background: var(--gray-400); }           
+  .cartlist__title { text-transform: uppercase; }
+  .cartlist__table { border: 1px solid var(--gray-700); }
 
+  @media screen {
+    .container {   }
+    .cartlist { display: flex; flex-direction: column; gap: 1rem; }
+    .cartlist__title { }
+    .cartlist__table {  }
+  }
+</style>
 <body>
-    
+    <main class="container">
+      <section class="cartlist">
+        <h5 class="cartlist__title">you buy orders we buy orders group orders my packages</h5>
+        <div class="cartlist__table">
+
+          <div class="table-container" role="table" aria-label="Destinations">
+            <div class="flex-table header" role="rowgroup">
+              <div class="flex-row first" role="columnheader">
+                <input type="checkbox" class="">
+              </div>
+              <div class="flex-row" role="columnheader">order#</div>
+              <div class="flex-row" role="columnheader">store</div>
+              <div class="flex-row" role="columnheader">qty</div>
+              <div class="flex-row" role="columnheader">subtotal</div>
+              <div class="flex-row" role="columnheader">btn</div>
+            </div>
+          <div class="flex-table row" role="rowgroup">
+            <div class="flex-row first" role="cell">
+                <input type="checkbox" class="">
+            </div>
+            <div class="__mobile-ver">
+                <div class="flex-row" role="cell">AA00000</div>
+                <div class="flex-row" role="cell">
+                  img-thumb, tit<br>notibox
+                </div>
+                <div class="flex-row" role="cell">0000</div>
+                <div class="flex-row" role="cell">
+                  total<br>item price<br>hadling<br>pay process<br>domestic shipping
+                </div>
+                <div class="flex-row" role="cell">btn1<br>btn2</div>
+            </div>
+          
+          
+          </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+    </main>
 </body>
 <script>
 </script>
