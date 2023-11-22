@@ -4,8 +4,88 @@
 #u_skip{position:relative;z-index:1000;margin-left:20px}
 #u_skip a{position:absolute;top:-30px;left:0;width:128px;border:1px solid #4ec53d;background:url(../img/spr_u_skip.png) repeat-x 0 -11px;text-align:center;outline:none}
 #u_skip a:active,#u_skip a:focus{top:0;text-decoration:none;cursor:pointer;zoom:1}
-#u_skip span{display:inline-block;padding:2px 6px 0 0;background:url(../img/spr_u_skip.png) no-repeat 100% 11px;font-size:11px;line-height:26px;color:#fff;letter-spacing:-1px}
+#u_skip span{display:inline-block;padding:2px 6px 0 0;background:url(../img/spr_u_skip.png) no-repeat 100% 11px;font-size:11px;line-height:26px;color:var(--gary-0);letter-spacing:-1px}
 
+
+
+/* header */
+.header { width: 100%; }
+
+/* navbar */
+.navbar {
+  display: flex; /*한 줄에 나란히*/
+  justify-content: space-between; /*스페이스를 사이사이에 넣음*/
+  align-items: center; /*중앙 배치*/
+  background-color: var(--dk-dgb-800);
+  padding: 8px 12px; /*navbar 크기 조정*/
+}
+a{
+  text-decoration: none;/*.없앰*/
+  color: white;
+}
+.navbar_logo {
+  font-size: 24px;
+  color : white;
+}
+.navbar_logo img {
+  width: 5.25rem;    
+}
+.navbar_menu {
+  display: flex; /*한 줄에 하나씩 나옴*/
+  list-style:none; /*홈이 같지 않음*/
+  padding-left: 0; /*이렇게 지정해서 중앙에 배치*/
+}
+.navbar_menu li {
+  padding: 8px 12px; /*메뉴안 내용들의 간격 조정*/
+}
+.navbar_menu li:hover {/*클릭시 색깔 변함*/
+  background-color: #d49466;
+  border-radius: 4px; /*모서리 둥글게*/
+}
+.navbar_info{
+  color: var(--gary-0);
+  display: flex;
+  list-style:none;    
+  padding-left: 0; /*중앙 배치*/
+}
+.navbar_info li {
+  padding: 8px 12px;
+}
+.navbar_toogleBtn { /*위치 조정*/
+  display: none; /*큰 크기때는 안 보이게 함*/
+  position: absolute; /*제일 위에 배치*/
+  right: 32px; /*오른쪽에서 32px 떨어진 곳에 배치*/
+  font-size: 24px;
+  color: var(--gary-0);
+}
+@media screen and (max-width: 1075px) { /*영상에선 768px*/
+  .navbar {
+      flex-direction: column; /*기존은 row, column으로 아래로 내림*/
+      align-items: flex-start; /*왼쪽으로 이동*/
+  }
+  .navbar_menu{
+      display: none; /*화면에서 사라짐*/
+      flex-direction: column;
+      align-items: center; /*중앙배치*/
+      width: 100% /*align-items가 반응하지 않는 부분을 width가 보완*/
+  }
+  .navbar_menu li{ /*hover부분이 넓어짐*/
+      width: 100%; 
+      text-align: center;
+  }
+  .navbar_info {
+      display: none; 
+      justify-content: center; /*중앙 배치*/
+      width: 100%;
+  }
+  .navbar_toogleBtn{/*화면이 작아질때만 표시되도록 함*/
+      display: block; 
+  }
+  .navbar_menu.active,
+  .navbar_info.active { /*navbar_toogleBtn이 클릭시 활성화*/
+      display: flex;    
+  }
+}
 
 :root {
   /* 🖋️Gray Scales */
