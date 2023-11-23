@@ -58,6 +58,7 @@ a{
   font-size: 24px;
   color: var(--gary-0);
 }
+
 @media screen and (max-width: 1075px) { /*영상에선 768px*/
   .navbar {
       flex-direction: column; /*기존은 row, column으로 아래로 내림*/
@@ -154,7 +155,7 @@ a{
   --grd-org: linear-gradient(46deg, #FB9851 0%, #FCB583 100%);
 
   --character-primary-inverse: #FFF;
-  --label-color-dark-primary: #FFF; /* 혹시나 하고 적어놓습니다. --character-primary-inverse랑 중복안가요? 피그마에서 따오긴 했는데, 아니면 못본 척 삭제하고 가던 길 지나가주십쇼..! */
+  --label-color-dark-primary: #FFF; 
 
   --bgzt-primary: #D80C18;
   --naver-primary: #03C75A;
